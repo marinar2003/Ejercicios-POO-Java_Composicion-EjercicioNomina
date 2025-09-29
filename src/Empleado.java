@@ -6,11 +6,11 @@ public class Empleado {
 	private Departamento dpto;
 	
 	
-	public Empleado(String nombre, String cargo, Salario s, Departamento d) {
+	public Empleado(String nombre, String cargo,Salario salario, Departamento dpto) {
 	    this.nombre = nombre;
 	    this.cargo = cargo;
-	    this.salario = s; // s es un objeto Salario
-	    this.dpto = d;    // d es un objeto Departamento
+	    this.salario = new Salario(5000, 1500); 
+	    this.dpto = new Departamento("Deposito", 1000);
 	}
 	
 	

@@ -17,23 +17,23 @@ public class Main {
         String cargo = teclado.nextLine();
 
         // --- 2. RECOLECCIÓN DE DATOS PARA EL COMPONENTE SALARIO ---
-        System.out.println("\n--- Datos de Salario ---");
-        System.out.print("Cual es el Salario Base: ");
-        double salarioBase = teclado.nextDouble();
-        teclado.nextLine(); // Limpiar el buffer
+        //System.out.println("\n--- Datos de Salario ---");
+        //System.out.print("Cual es el Salario Base: ");
+        //double salarioBase = teclado.nextDouble();
+        //teclado.nextLine(); // Limpiar el buffer
         
-        System.out.print("Cuales son los Beneficios Fijos: ");
-        double beneficiosFijos = teclado.nextDouble();
-        teclado.nextLine(); // Limpiar el buffer
+        //System.out.print("Cuales son los Beneficios Fijos: ");
+        //double beneficiosFijos = teclado.nextDouble();
+        //teclado.nextLine(); // Limpiar el buffer
         
         // --- 3. RECOLECCIÓN DE DATOS PARA EL COMPONENTE DEPARTAMENTO ---
-        System.out.println("\n--- Datos de Departamento ---");
-        System.out.print("Nombre del Departamento: ");
-        String nombreDpto = teclado.nextLine();
+        //System.out.println("\n--- Datos de Departamento ---");
+        //System.out.print("Nombre del Departamento: ");
+        //String nombreDpto = teclado.nextLine();
         
-        System.out.print("Presupuesto Anual del Departamento: ");
-        double presupuestoAnual = teclado.nextDouble();
-        teclado.nextLine(); // Limpiar el buffer (IMPORTANTE!)
+        //System.out.print("Presupuesto Anual del Departamento: ");
+        //double presupuestoAnual = teclado.nextDouble();
+        //teclado.nextLine(); // Limpiar el buffer (IMPORTANTE!)
 
         
         // =================================================================
@@ -43,17 +43,17 @@ public class Main {
         // 4. CONSTRUIR LOS OBJETOS COMPONENTES (Usando los constructores con parámetros definidos)
         
         // Creamos el objeto Salario, pasándole los datos recolectados (salarioBase y beneficiosFijos)
-        Salario componenteSalario = new Salario(salarioBase, beneficiosFijos);
+        //Salario componenteSalario = new Salario(salarioBase, beneficiosFijos);
         
         // Creamos el objeto Departamento, pasándole los datos recolectados (nombreDpto y presupuestoAnual)
-        Departamento componenteDpto = new Departamento(nombreDpto, presupuestoAnual);
+        //Departamento componenteDpto = new Departamento(nombreDpto, presupuestoAnual);
         
         
         // 5. CONSTRUIR EL OBJETO PRINCIPAL (EMPLEADO)
         
         // Le pasamos al Empleado sus atributos propios (nombre, cargo) y los OBJETOS
         // ya construidos (componenteSalario y componenteDpto).
-        Empleado empleado1 = new Empleado(nombre, cargo, componenteSalario, componenteDpto);
+        Empleado empleado1 = new Empleado(nombre, cargo, null, null);
         
         
         // 6. Ejecutar la funcionalidad
